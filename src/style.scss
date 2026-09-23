@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+.cart {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	&__bg {
+		max-width: 50rem;
+		height: auto;
+	}
+
+	&__content {
+		display: flex;
+		gap: 1rem;
+	}
+
+	&__box {
+		display: grid;
+	}
+
+	&__price {
+		display: grid;
+
+		&--new {
+			line-height: 1.5rem;
+			font-size: 0.875rem;
+			font-style: normal;
+			font-weight: normal;
+			visibility: visible;
+			font-family: sans-serif;
+			color: red;
+			font-weight: 600;
+		}
+
+		&--old {
+			font-size: 0.7em;
+			text-decoration: line-through;
+		}
+	}
+}
